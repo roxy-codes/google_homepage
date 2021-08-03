@@ -31,9 +31,9 @@ Top-right navigation
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 10px;
+    margin-top: 7px;
     font-size: medium;
-    padding-left: 5px;
+    padding-left: 0px;
 }
 
 .nav-link{
@@ -55,7 +55,28 @@ Main portion of page
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 100px;
+    margin-top: 170px;
+}
+
+.bar {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+    width: 640px;
+    margin-top: 20px;
+    border: 1px solid #dcdcdc;
+}
+
+.bar:hover {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+.bar:focus-within {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline: none;
 }
 
 .searchbar {
@@ -64,7 +85,7 @@ Main portion of page
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    width: 500px;
+    width: 600px;
     height: 45px;
     border: 1px solid var(--border-color);
     border-radius: 20px;
@@ -79,9 +100,30 @@ Main portion of page
 .search-input {
     width: 100%;
     height: 100%;
+    border: none;
+}
+
+.search-input:focus-within {
+    outline: none;
 }
 
 .microphone-icon {
     width: 25px;
     height: 25px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: f5f5f5;
+    color: #707070;
+    border: none;
+    padding: 10p 20px;
+    margin: 5px;
+    border-radius: 4px;
+    outline: none;
 }
